@@ -1,0 +1,34 @@
+{
+  "name": "webpage",
+  "version": "1.0.0",
+  "description": "A test webpage project",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "serve": "python3 -m http.server 8000",
+    "lint": "eslint src/**/*.js",
+    "validate-html": "html-validate src/**/*.html"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.0.0",
+    "eslint": "^8.0.0",
+    "html-validate": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": [
+      "**/tests/**/*.test.js",
+      "**/__tests__/**/*.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.min.js"
+    ]
+  },
+  "keywords": ["webpage", "testing", "html", "css", "javascript"],
+  "author": "",
+  "license": "MIT"
+}
