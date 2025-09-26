@@ -1,0 +1,16 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "close-order": "error",
+    "void-style": ["error", {"style": "omit"}],
+    "class-pattern": "off",
+    "require-sri": "off",
+    "no-inline-style": "warn",
+    "prefer-native-element": "error",
+    "no-redundant-for": "error",
+    "input-missing-label": "warn"
+  },
+  "elements": [
+    "html5"
+  ]
+}
